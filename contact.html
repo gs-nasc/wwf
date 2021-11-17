@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/loading.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <title>WWF Brazil - Página Inicial</title>
+</head>
+
+<body class="oy-h">
+    <!-- SITE -->
+    <div class="website">
+        <!-- MENU -->
+        <nav>
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="assets/img/wwf.svg" alt="Logo WWF Brazil" />
+                </a>
+                <a href="#">
+                    <img src="assets/img/brazil.svg" alt="Brazil Flag" />
+                </a>
+            </div>
+            <div class="menu-area">
+                <ul>
+                    <li id="menu">
+                        <i class="menu-icon"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="menu-page">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="cause.html">Sobre a causa</a>
+                </li>
+                <li>
+                    <a href="contact.html">Fale conosco</a>
+                </li>
+                <li>
+                    <a href="news.html">Notícias</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- CONTEUDO -->
+        <div class="content">
+            <div class="content-area">
+                <div class="content-area-title">
+                    <h1>Fale Conosco</h1>
+                </div>
+                <div class="content-area-text">
+                    <form>
+                        <input type="text" placeholder="Nome">
+                        <input type="text" placeholder="Email">
+                        <textarea placeholder="Mensagem..." rows="7"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="success-message hide">
+        <div class="success-message-area">
+            <div class="success-message-area-title">
+                <p>Mensagem enviada com sucesso!</p>
+            </div>
+            <div class="success-message-area-text">
+                <p>Obrigado por entrar em contato conosco. Em breve entraremos em contato com você.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading-page">
+        <img src="assets/img/wwf.svg" alt="WWF Logo">
+    </div>
+
+    <script src="assets/js/loading.js"></script>
+    <script src="assets/js/menu.js"></script>
+
+    <script>
+        const submit = (e) => {
+            e.preventDefault();
+            document.querySelector('.success-message').classList.remove('hide');
+            setTimeout(() => {
+                document.querySelector('.success-message').classList.add('hide');
+            }, 3000);
+        }
+        document.querySelector('form').addEventListener('submit', submit);
+    </script>
+</body>
+
+</html>

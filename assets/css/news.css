@@ -1,0 +1,36 @@
+.content {
+    min-height: 100vh;
+}
+
+.news-item {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: calc(100vw - 200px);
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-item-image {
+    width: 350px;
+    margin-right: 20px;
+}
+
+.news-item-text a {
+    color: #fff;
+    background: black;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}

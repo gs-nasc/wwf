@@ -1,0 +1,35 @@
+.content-area-title {
+    text-transform: uppercase;
+    font-size: 28px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-area-text {
+    width: 650px;
+    margin: 0 auto;
+}
+
+.content-area-text p{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.content-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.content {
+    min-height: 100vh;
+}
